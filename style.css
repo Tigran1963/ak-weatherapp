@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@font-face {
+	font-family: HSESans;
+	font-display: swap;
+	src: url(fonts/HSESans-Regular.woff) format("woff");
+	font-weight: 400;
+	font-style: normal
+}
+@font-face {
+	font-family: HSESans;
+	font-display: swap;
+	src: url(fonts/HSESans-SemiBold.woff) format("woff");
+	font-weight: 600;
+	font-style: normal
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box
+}
+*::after,
+*::before {
+  display: inline-block
+}
+body,
+html {
+  height: 100%;
+  min-width: 320px
+}
+body {
+  color: #E6E7E8;
+  line-height: 1;
+  font-family: HSESans;
+  font-size: .875rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+button,
+input,
+textarea {
+  font-family: HSESans;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent
+}
+input,
+textarea {
+  width: 100%
+}
+label {
+  display: inline-block
+}
+button,
+option,
+select {
+  cursor: pointer
+}
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none
+}
+ul li {
+  list-style: none
+}
+img {
+  vertical-align: top
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit
+}
+.lock body {
+  overflow: hidden;
+  touch-action: none;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-weight: 400;
+  background-color: #0F2D69
+}
+@supports (overflow:clip) {
+  .wrapper {
+    overflow: clip
+  }
+}
+.wrapper > main {
+  flex: 1 1 auto
+}
+.wrapper > * {
+  min-width: 0
+}
+[class*=__container] {
+  max-width: 800px;
+  margin: 0 auto
+}
+.weatherapp {}
+.weatherapp__container {
+	display: flex;
+	justify-content:center;align-items: center;
+	flex-direction: column;
+	padding: 50px 15px;
+}
+.weatherapp__title {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+}
+.weatherapp__input {
+	padding: 10px;
+	margin-top: 10px;
+	outline: none;
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+.weatherapp__button:hover {
+	background-color: #46A0A0;
+}
+.weatherapp__button {
+	transition: all 0.3s;
+	padding: 10px;
+	margin-top: 10px;
+	width: 100%;
+	background-color: #009B64;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.weatherapp__result{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
